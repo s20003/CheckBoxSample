@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CheckBoxSample</string>
+    <string name="time_setting_button_text">TimeSetting</string>
+    <string name="morning_checkbox_text">Morning</string>
+    <string name="noon_checkbox_text">Noon</string>
+    <string name="night_checkbox_text">Night</string>
+    <string name="next_button_text">Next</string>
+    <string name="return_button_text">Return</string>
+    <string name="register_button_text">Register</string>
+</resources>
