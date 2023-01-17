@@ -38,11 +38,18 @@ class NextActivity : AppCompatActivity() {
 
         binding.registerButton.setOnClickListener {
             val selectedList = recyclerViewAdapter.listOfSelectedActivities()
-            println(selectedList)
+            // println(selectedList)
 //            val intent = Intent(this, DisplayActivity::class.java)
-//            for (v in selectedList) {
-//                // Intent の処理を書く
-//            }
+            var str = ""
+            for (v in selectedList) {
+                // 一つの文字列にする
+                str += if (v == selectedList[selectedList.size - 1] ) {
+                    v
+                } else {
+                    "$v,"
+                }
+            }
+            println(str)
 //            startActivity(intent)
         }
         // https://www.youtube.com/watch?v=4uWc34lk2iE 7:35
